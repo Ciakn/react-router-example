@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 function DashbordPage() {
   return (
@@ -9,6 +9,7 @@ function DashbordPage() {
           <NavLink to="payments">Payments</NavLink>
           <NavLink to="profile">Profile</NavLink>
         </div>
+        <Outlet />
       </div>
     </div>
   );
