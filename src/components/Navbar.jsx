@@ -8,7 +8,7 @@ function Navbar() {
 
       <NavLink to="Dashbord">Dashbord</NavLink>
 
-      <NavLink to="Post">Post</NavLink>
+      <NavLink to="posts">Post</NavLink>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import PostPage from "./pages/PostPage";
 import Layout from "./pages/Layout";
 import Payment from "./components/Payment";
 import Profile from "./components/Profile";
+import Post from "./pages/SinglePost";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
 
             <Route path="profile" element={<Profile />} />
           </Route>
-          <Route path="post" element={<PostPage />} />
+          <Route path="posts/:id" element={<Post />} />
+          <Route path="posts" element={<PostPage />} />
         </Route>
       </Routes>
     </>
