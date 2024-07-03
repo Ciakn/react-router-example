@@ -12,12 +12,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.nav{
+.nav {
   display: flex;
   gap: 1rem;
-
 }
+.sidebar {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 
+  padding: 1rem;
+  box-shadow: inset 2px 2px 8px gray;
+}
 
 a {
   font-weight: 500;
