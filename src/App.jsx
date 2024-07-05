@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import DashbordPage from "./pages/DashbordPage";
 import PostPage from "./pages/PostPage";
@@ -17,9 +17,8 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="login" element={<Login />} />
           <Route path="dashbord" element={<DashbordPage />}>
-            <Route index element={<Payment />} />
+            <Route index element={<Navigate to="payments" />} />
             <Route path="payments" element={<Payment />} />
-
             <Route path="profile" element={<Profile />} />
           </Route>
           <Route path="posts/:id" element={<Post />} />
